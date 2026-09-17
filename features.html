@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMDR - Platform Features for Healthcare IT</title>
+  <meta name="description" content="Workflow automation, custom report generation and resolution insights for hospital IT - with the AI components inside a HIPAA-compliant boundary and connectors to Jira, SolarWinds, TalkDesk, Teams and Outlook.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">
+        CMDR
+        <span class="brand__tag">Incident command for hospitals</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        Menu
+      </button>
+
+      <!-- Product (Features, Integrations) / Healthcare / About / Schedule a demo -->
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="features.html" aria-current="page">Features</a></li>
+          <li><a class="nav__link" href="integrations.html">Integrations</a></li>
+          <li><a class="nav__link" href="healthcare.html">For hospitals</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+            <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Schedule a demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="wrap">
+        <h1>Features</h1>
+        <p class="hero__sub">
+          Everything CMDR does, it does inside the systems your hospital already
+          runs - and inside a compliance boundary your security reviewers can
+          sign off on.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--on-dark" href="contact.html">Schedule a demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Built for healthcare: compliance boundary, connectors, service layer. -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Built for healthcare</span>
+          <h2>Three things a generic incident platform will not give you</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>A HIPAA-compliant boundary</h3>
+            <p>
+              CMDR leverages AI and machine learning in a fully HIPAA-compliant
+              environment. The models that summarise a bridge call and draft a root
+              cause report run inside that boundary. Atlassian Jira's AI solutions
+              are not currently HIPAA compliant.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Connectors to the systems hospitals run</h3>
+            <p>
+              Jira, SolarWinds, TalkDesk, Microsoft Teams, Outlook and your security
+              monitoring stack - not a parallel tool chain your team has to remember
+              to open during an outage.
+            </p>
+          </div>
+          <div class="card">
+            <h3>A service layer, not an empty platform</h3>
+            <p>
+              We define with you what to measure and how incidents are classified,
+              then configure it. You are not handed a blank platform and asked to
+              invent your own incident taxonomy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow automation. -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="media">
+          <div class="media__text">
+            <span class="eyebrow">Workflow automation</span>
+            <h2>Declare, staff and brief an incident in one step</h2>
+            <p>
+              Trigger the workflow from a monitoring alert, a call volume spike or
+              a single command. CMDR creates the incident channel, applies the
+              severity and classification rules you defined with us, pages the
+              on-call rota for the affected service, opens the bridge and creates
+              the Jira ticket.
+            </p>
+            <p>
+              Leadership updates go out on the cadence you set, so nobody has to
+              stop working the incident to write an email. Incidents are linked to
+              one another, so a recurring failure is visible as a pattern rather
+              than as five unrelated tickets.
+            </p>
+          </div>
+          <figure class="figure">
+            <img src="assets/img/incident-channel.svg"
+                 alt="A CMDR incident channel showing the incident declared, on-call engineers added, the bridge opened and a Jira ticket created."
+                 width="640" height="400">
+            <figcaption>Incident channel, opened and staffed automatically.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom report generation. -->
+    <section class="section">
+      <div class="wrap">
+        <div class="media media--flip">
+          <div class="media__text">
+            <span class="eyebrow">Custom report generation</span>
+            <h2>The root cause report drafts itself</h2>
+            <p>
+              CMDR records the bridge and keeps the timeline as events happen, then
+              drafts the root cause report from what was actually said and done.
+              Your team reviews, edits and signs it off.
+            </p>
+            <p>
+              Report templates match the formats your organisation already files -
+              incident summaries for leadership, RCA tickets in Jira, and the
+              documentation your compliance and SLA reporting require.
+            </p>
+          </div>
+          <figure class="figure">
+            <img src="assets/img/incident-report.svg"
+                 alt="A root cause report drafted by CMDR with time to detect, time to engage and time to resolve, a summary and a timeline."
+                 width="640" height="400">
+            <figcaption>Root cause report, drafted from the incident record.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resolution insights. -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Resolution insights</span>
+          <h2>Know where your response actually loses time</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>KPIs where there were none</h3>
+            <p>
+              Time to detect, time to engage the right team and time to resolve,
+              measured consistently across every major incident rather than
+              estimated after the fact.
+            </p>
+          </div>
+          <div class="card">
+            <h3>No single point of knowledge</h3>
+            <p>
+              Every incident and its resolution are recorded and searchable, so the
+              response does not depend on the one person who remembers last time.
+            </p>
+          </div>
+          <div class="card">
+            <h3>The true cost of an incident</h3>
+            <p>
+              Call centre volume, affected clinical services and response hours are
+              consolidated into one view, so leadership can see what an outage
+              actually cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value that compounds. Avoidance is roadmap (Q4 FY27), not shipped. -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Value that compounds</span>
+          <h2>Where CMDR takes you over three years</h2>
+          <p class="lede">
+            The saving is not only a faster response this quarter. Each phase of the
+            engagement builds the data the next one needs.
+          </p>
+        </div>
+
+        <div>
+          <div class="phase">
+            <span class="phase__year">Year 1</span>
+            <h3>Visibility</h3>
+            <p>
+              Every ticketing, call and monitoring source connected. KPIs for major
+              incident response where none existed. Leadership sees the state of the
+              environment and what each incident costs.
+            </p>
+          </div>
+          <div class="phase">
+            <span class="phase__year">Year 2</span>
+            <h3>Standardisation</h3>
+            <p>
+              Incident bridges, recordings and tickets created automatically.
+              Training built from your own incidents, so new IT staff are productive
+              sooner and the response no longer depends on who is on shift.
+            </p>
+          </div>
+          <div class="phase">
+            <span class="phase__year">Year 3</span>
+            <h3>Avoidance <span class="tag">Phase 5 &middot; on the roadmap</span></h3>
+            <p>
+              With enough incident history, CMDR identifies the precursor conditions
+              to a major incident and flags them before the outage. Avoiding one
+              significant outage a year more than justifies the investment; every
+              year after that, the saving repeats.
+            </p>
+            <p style="margin-top:.5rem;font-size:.95rem">
+              Avoidance is the final phase of the engagement and is not shipped
+              today. It is scheduled for Q4 FY27.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>See CMDR on your own incidents.</h2>
+          <p class="lede">Book a 30 minute demo.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--on-dark" href="contact.html">Schedule a demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-brand__name">CMDR</span>
+          <p>Incident response built for hospital IT. Streamline your incident response today.</p>
+          <!-- PENDING CONFIRMATION: enable once Boston Children's Hospital has
+               approved use of its name on the website.
+          <p style="margin-top:.6rem">Built in Boston with Boston Children's Hospital.</p>
+          -->
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="integrations.html">Integrations</a></li>
+            <li><a href="healthcare.html">For hospitals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 CMDR. All rights reserved.</span>
+        <span class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img"
+     aria-label="Mock-up of a CMDR root cause report drafted automatically from the incident timeline, with response metrics.">
+  <defs>
+    <style>
+      .bg{fill:#f5f8fa}.pane{fill:#fff}.line{stroke:#dce5eb;stroke-width:1}
+      .t{font-family:Inter,system-ui,sans-serif;fill:#1b2a38}
+      .m{font-family:Inter,system-ui,sans-serif;fill:#536b7f}
+      .b{font-weight:650}
+    </style>
+  </defs>
+  <rect class="bg" width="640" height="400"/>
+  <rect class="pane" x="40" y="24" width="560" height="352" rx="10"/>
+  <rect x="40" y="24" width="560" height="4" rx="2" fill="#0d7490"/>
+
+  <text class="m" x="72" y="62" font-size="10">ROOT CAUSE REPORT · DRAFTED BY CMDR</text>
+  <text class="t b" x="72" y="86" font-size="16">inc-2418 — EHR response times degraded</text>
+  <text class="m" x="72" y="106" font-size="11">17 Sep 2026 · Severity 1 · Reviewed by A. Shah</text>
+  <line class="line" x1="72" y1="122" x2="568" y2="122"/>
+
+  <g>
+    <rect x="72" y="140" width="116" height="60" rx="8" fill="#f5f8fa"/>
+    <text class="m" x="86" y="160" font-size="9.5">TIME TO DETECT</text>
+    <text class="t b" x="86" y="186" font-size="20">2m</text>
+  </g>
+  <g>
+    <rect x="200" y="140" width="116" height="60" rx="8" fill="#f5f8fa"/>
+    <text class="m" x="214" y="160" font-size="9.5">TIME TO ENGAGE</text>
+    <text class="t b" x="214" y="186" font-size="20">4m</text>
+  </g>
+  <g>
+    <rect x="328" y="140" width="116" height="60" rx="8" fill="#f5f8fa"/>
+    <text class="m" x="342" y="160" font-size="9.5">TIME TO RESOLVE</text>
+    <text class="t b" x="342" y="186" font-size="20">47m</text>
+  </g>
+  <g>
+    <rect x="456" y="140" width="112" height="60" rx="8" fill="#e6f2f6"/>
+    <text x="470" y="160" font-size="9.5" font-family="Inter,system-ui,sans-serif" fill="#095c74">CALLS AVOIDED</text>
+    <text x="470" y="186" font-size="20" font-family="Inter,system-ui,sans-serif" fill="#095c74" font-weight="650">34</text>
+  </g>
+
+  <text class="t b" x="72" y="230" font-size="12">Summary</text>
+  <rect x="72" y="240" width="496" height="7" rx="3.5" fill="#e7edf2"/>
+  <rect x="72" y="254" width="496" height="7" rx="3.5" fill="#e7edf2"/>
+  <rect x="72" y="268" width="372" height="7" rx="3.5" fill="#e7edf2"/>
+
+  <text class="t b" x="72" y="300" font-size="12">Timeline</text>
+  <circle cx="76" cy="318" r="4" fill="#0d7490"/>
+  <text class="m" x="90" y="322" font-size="10.5">09:14 · SolarWinds latency alert correlated with TalkDesk call volume</text>
+  <circle cx="76" cy="338" r="4" fill="#0d7490"/>
+  <text class="m" x="90" y="342" font-size="10.5">09:18 · Connection pool saturation confirmed on the bridge</text>
+  <circle cx="76" cy="358" r="4" fill="#0d7490"/>
+  <text class="m" x="90" y="362" font-size="10.5">10:01 · Failover complete, response times back to baseline</text>
+</svg>

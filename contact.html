@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule a Demo - CMDR Incident Response for Hospitals</title>
+  <meta name="description" content="Tell us about your environment and we will set up a demo of CMDR on your own incident data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">
+        CMDR
+        <span class="brand__tag">Incident command for hospitals</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        Menu
+      </button>
+
+      <!-- Product (Features, Integrations) / Healthcare / About / Schedule a demo -->
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="features.html">Features</a></li>
+          <li><a class="nav__link" href="integrations.html">Integrations</a></li>
+          <li><a class="nav__link" href="healthcare.html">For hospitals</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+            <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Schedule a demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Demo request. Organisation and Role show whether a CIO or an engineer writes. -->
+    <section class="section">
+      <div class="wrap">
+        <div class="media">
+          <div class="media__text">
+            <span class="eyebrow">Schedule a demo</span>
+            <h1 class="h1-sentence">Tell us about your environment and we will set up a demo on your own incident data.</h1>
+            <p class="lede" style="margin-top:1rem">
+              Thirty minutes. We will walk through how CMDR would have handled a
+              recent major incident in your environment - on the Jira, SolarWinds,
+              TalkDesk, Teams and Outlook stack you already run.
+            </p>
+          </div>
+
+          <div class="form-card">
+            <!-- TODO: point `action` at the form handler used by the live site
+                 (Webflow form, HubSpot, or an endpoint of your own). -->
+            <form action="#" method="post">
+              <div class="field-row">
+                <div class="field">
+                  <label for="first-name">First name</label>
+                  <input id="first-name" name="first-name" type="text" autocomplete="given-name" required>
+                </div>
+                <div class="field">
+                  <label for="last-name">Last name</label>
+                  <input id="last-name" name="last-name" type="text" autocomplete="family-name" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email">Work email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="field">
+                <label for="organisation">Organisation</label>
+                <input id="organisation" name="organisation" type="text" autocomplete="organization"
+                       placeholder="Hospital or health system" required>
+              </div>
+
+              <div class="field">
+                <label for="role">Role</label>
+                <input id="role" name="role" type="text" autocomplete="organization-title"
+                       placeholder="e.g. CIO, IT Director, Service Desk Manager" required>
+              </div>
+
+              <div class="field">
+                <label for="environment">
+                  Your environment <span class="hint">(optional)</span>
+                </label>
+                <textarea id="environment" name="environment"
+                          placeholder="Which systems do you run for ticketing, monitoring and the call centre? Anything you would like the demo to cover?"></textarea>
+              </div>
+
+              <div class="btn-row">
+                <button class="btn btn--primary" type="submit">Request a demo</button>
+              </div>
+              <p class="form-foot">
+                We will reply within one business day. See our
+                <a href="privacy.html">privacy notice</a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-brand__name">CMDR</span>
+          <p>Incident response built for hospital IT. Streamline your incident response today.</p>
+          <!-- PENDING CONFIRMATION: enable once Boston Children's Hospital has
+               approved use of its name on the website.
+          <p style="margin-top:.6rem">Built in Boston with Boston Children's Hospital.</p>
+          -->
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="integrations.html">Integrations</a></li>
+            <li><a href="healthcare.html">For hospitals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 CMDR. All rights reserved.</span>
+        <span class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

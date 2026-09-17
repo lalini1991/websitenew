@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMDR - Integrations for Hospital IT Systems</title>
+  <meta name="description" content="CMDR connects to where hospital incidents are detected - SolarWinds, TalkDesk, security monitoring and Jira - and to where your team responds: Microsoft Teams, Zoom, Outlook and Jira.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">
+        CMDR
+        <span class="brand__tag">Incident command for hospitals</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        Menu
+      </button>
+
+      <!-- Product (Features, Integrations) / Healthcare / About / Schedule a demo -->
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="features.html">Features</a></li>
+          <li><a class="nav__link" href="integrations.html" aria-current="page">Integrations</a></li>
+          <li><a class="nav__link" href="healthcare.html">For hospitals</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+            <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Schedule a demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="wrap">
+        <h1>Integrations</h1>
+        <p class="hero__sub">
+          CMDR connects to the systems your hospital already runs - on both sides
+          of an incident: where it is detected, and where your team responds.
+        </p>
+      </div>
+    </section>
+
+    <!-- Detection sources. Phase 1 builds these connections (Q4 FY26). -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Where incidents are detected</span>
+          <h2>CMDR watches the sources, so your team does not have to</h2>
+          <p class="lede">
+            Signals from monitoring, the call centre, security and ticketing are
+            correlated into one incident instead of four separate investigations.
+          </p>
+        </div>
+
+        <div class="grid grid--cards">
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">SW</span>
+            <div>
+              <h3>SolarWinds</h3>
+              <p>Network monitoring. Latency, saturation and device alerts start the incident workflow.</p>
+            </div>
+          </div>
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">TD</span>
+            <div>
+              <h3>TalkDesk</h3>
+              <p>Call centre. A spike in service desk call volume is itself a detection signal.</p>
+            </div>
+          </div>
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">SEC</span>
+            <div>
+              <h3>Security monitoring</h3>
+              <p>Alerts from your security stack are correlated with the operational picture.</p>
+            </div>
+          </div>
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">JI</span>
+            <div>
+              <h3>Jira</h3>
+              <p>Ticket creation, categorisation, prioritisation and assignment - plus RCA tickets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Where your team responds</span>
+          <h2>The bridge opens where your team already works</h2>
+          <p class="lede">
+            No new console to learn during an outage. CMDR runs the response inside
+            the collaboration tools your hospital has already approved.
+          </p>
+        </div>
+
+        <div class="grid grid--cards">
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">MT</span>
+            <div>
+              <h3>Microsoft Teams</h3>
+              <p>Incident channels and bridges created and staffed automatically from the on-call rota.</p>
+            </div>
+          </div>
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">ZM</span>
+            <div>
+              <h3>Zoom</h3>
+              <p>Bridge calls opened, recorded and transcribed for the root cause report.</p>
+            </div>
+          </div>
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">OL</span>
+            <div>
+              <h3>Outlook</h3>
+              <p>Automated IT alert email and leadership status updates, on the cadence you set.</p>
+            </div>
+          </div>
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">JI</span>
+            <div>
+              <h3>Jira</h3>
+              <p>The incident record and RCA ticket stay in the system your team already files in.</p>
+            </div>
+          </div>
+          <!-- Slack: incident reports, not "compliance reports" - see NOTES.md. -->
+          <div class="integration">
+            <span class="integration__mark" aria-hidden="true">SL</span>
+            <div>
+              <h3>Slack</h3>
+              <p>Start, update and close an incident, and generate incident reports, with one command.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <p class="status-note">
+          <span aria-hidden="true">&#9432;</span>
+          <span>
+            Connections to SolarWinds, TalkDesk, the security monitoring stack and
+            Jira are built in Phase 1 of a CMDR engagement. Talk to us about the
+            timeline for your environment.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Installation routed through onboarding rather than public self-install,
+         because of the permission scopes a security reviewer will read. See NOTES.md. -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Installing CMDR</h2>
+          <p class="lede">
+            CMDR is installed into your Teams or Slack tenant during onboarding,
+            with the permission scopes reviewed and agreed with your security team
+            first. We will walk your reviewers through exactly what each scope is
+            used for.
+          </p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="contact.html">Talk to us about installation</a>
+          <a class="btn btn--ghost" href="contact.html">Schedule a demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-brand__name">CMDR</span>
+          <p>Incident response built for hospital IT. Streamline your incident response today.</p>
+          <!-- PENDING CONFIRMATION: enable once Boston Children's Hospital has
+               approved use of its name on the website.
+          <p style="margin-top:.6rem">Built in Boston with Boston Children's Hospital.</p>
+          -->
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="integrations.html">Integrations</a></li>
+            <li><a href="healthcare.html">For hospitals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 CMDR. All rights reserved.</span>
+        <span class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Conditions</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

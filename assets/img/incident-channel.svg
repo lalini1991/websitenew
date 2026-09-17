@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img"
+     aria-label="Mock-up of a CMDR incident channel: the incident is declared, on-call engineers are added, and a bridge is opened.">
+  <defs>
+    <style>
+      .bg{fill:#f5f8fa}.pane{fill:#fff}.line{stroke:#dce5eb;stroke-width:1}
+      .t{font-family:Inter,system-ui,sans-serif;fill:#1b2a38}
+      .m{font-family:Inter,system-ui,sans-serif;fill:#536b7f}
+      .b{font-weight:650}
+    </style>
+  </defs>
+  <rect class="bg" width="640" height="400"/>
+  <rect class="pane" x="0" y="0" width="188" height="400"/>
+  <line class="line" x1="188" y1="0" x2="188" y2="400"/>
+
+  <text class="t b" x="20" y="34" font-size="13">Teams</text>
+  <text class="m" x="20" y="66" font-size="11">CHANNELS</text>
+  <rect x="12" y="76" width="164" height="26" rx="6" fill="#e6f2f6"/>
+  <text class="t b" x="22" y="94" font-size="11.5"># inc-2418-ehr-slow</text>
+  <text class="m" x="22" y="124" font-size="11.5"># inc-2417-imaging</text>
+  <text class="m" x="22" y="150" font-size="11.5"># it-major-incidents</text>
+  <text class="m" x="22" y="176" font-size="11.5"># network-ops</text>
+
+  <text class="m" x="20" y="216" font-size="11">ON CALL</text>
+  <circle cx="28" cy="238" r="7" fill="#0d7490"/><text class="t" x="44" y="242" font-size="11.5">App support</text>
+  <circle cx="28" cy="264" r="7" fill="#0d7490"/><text class="t" x="44" y="268" font-size="11.5">Network</text>
+  <circle cx="28" cy="290" r="7" fill="#95a9ba"/><text class="m" x="44" y="294" font-size="11.5">Clinical liaison</text>
+
+  <rect class="pane" x="188" y="0" width="452" height="52"/>
+  <line class="line" x1="188" y1="52" x2="640" y2="52"/>
+  <text class="t b" x="208" y="26" font-size="13">inc-2418 — EHR response times degraded</text>
+  <rect x="208" y="33" width="46" height="14" rx="7" fill="#fdecec"/>
+  <text x="216" y="43.5" font-size="9" font-family="Inter,system-ui,sans-serif" fill="#a4262c" font-weight="650">SEV 1</text>
+  <text class="m" x="264" y="43.5" font-size="9.5">Declared 09:14 · Bridge open · Recording on</text>
+
+  <g>
+    <rect x="208" y="70" width="412" height="52" rx="8" fill="#fff" stroke="#dce5eb"/>
+    <rect x="208" y="70" width="3" height="52" rx="1.5" fill="#0d7490"/>
+    <text class="t b" x="224" y="90" font-size="11.5">CMDR · 09:14</text>
+    <text class="m" x="224" y="107" font-size="11.5">SolarWinds alert correlated with 34 TalkDesk calls. Incident declared.</text>
+  </g>
+  <g>
+    <rect x="208" y="132" width="412" height="52" rx="8" fill="#fff" stroke="#dce5eb"/>
+    <rect x="208" y="132" width="3" height="52" rx="1.5" fill="#0d7490"/>
+    <text class="t b" x="224" y="152" font-size="11.5">CMDR · 09:15</text>
+    <text class="m" x="224" y="169" font-size="11.5">On-call app support and network added. Bridge link posted.</text>
+  </g>
+  <g>
+    <rect x="208" y="194" width="412" height="52" rx="8" fill="#fff" stroke="#dce5eb"/>
+    <rect x="208" y="194" width="3" height="52" rx="1.5" fill="#0d7490"/>
+    <text class="t b" x="224" y="214" font-size="11.5">CMDR · 09:16</text>
+    <text class="m" x="224" y="231" font-size="11.5">Jira ticket ITSM-9042 created. Leadership update sent to CIO.</text>
+  </g>
+  <g>
+    <rect x="208" y="256" width="412" height="52" rx="8" fill="#fff" stroke="#dce5eb"/>
+    <circle cx="226" cy="272" r="9" fill="#e6f2f6"/>
+    <text x="222" y="276" font-size="9" font-family="Inter,system-ui,sans-serif" fill="#095c74" font-weight="650">AS</text>
+    <text class="t b" x="244" y="276" font-size="11.5">App support · 09:18</text>
+    <text class="m" x="244" y="293" font-size="11.5">Confirmed — database connection pool saturated. Failing over.</text>
+  </g>
+
+  <rect x="208" y="330" width="412" height="40" rx="8" fill="#fff" stroke="#dce5eb"/>
+  <text class="m" x="224" y="355" font-size="11.5">Message #inc-2418-ehr-slow</text>
+</svg>
