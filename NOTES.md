@@ -8,6 +8,28 @@ CMDR Vision proposal). The guiding decision from that review:
 > hospital IT, and orient it against the systems hospitals already run
 > (ServiceNow, Jira Service Management) rather than against startup tooling.
 
+## Sources
+
+- *CMDR website: suggested changes* (the review document).
+- *BCH - CMDR Vision* (the deck). Phase structure, phase values, the three
+  success measures, the Founding Hospital Partner term and the HIPAA wording
+  all come from here.
+
+**Deck pricing is deliberately not on the site.** The deck's only hard figures
+are the Founding Hospital Partner payment schedule and the three-year total.
+That is confidential commercial pricing, and the deck itself notes the rate is
+locked for the initial term with standard list pricing at renewal. Publishing
+it would disclose contract terms and undercut future negotiation. Nothing in
+`*.html` contains a figure from that schedule, and the validation script in
+this repo fails the build if one appears.
+
+**The deck contains no outcome or savings figures.** Its value statements are
+qualitative ("establish KPIs where none exist today", "avoid major incidents").
+The savings section on `healthcare.html` therefore describes the mechanism and
+uses the deck's own line - *"getting ahead of even one significant outage a
+year more than justifies the investment"* - rather than a number. To quantify
+it you need the Phase 2 KPIs and the BCH baseline.
+
 ## Build context
 
 Two sources were unavailable when this was written:
@@ -73,10 +95,32 @@ no gain. Rework it if the page count grows.
 
 ### Features (§3)
 
-*Built for healthcare* added as the first section (HIPAA boundary, connectors,
-service layer). *Value that compounds* added, following the engagement phases.
-Avoidance is labelled **Phase 5 · on the roadmap**, with Q4 FY27 stated in the
-body — it is not shipped and the page does not imply it is.
+Kept to the product: workflow automation, learning & RCA, resolution insights.
+Detail now matches the deck's architecture — Jira categorisation and
+assignment, Teams engagement of the IT duty officer and team on-calls, the
+Outlook automated alert email, real-time call-recording ingestion, automated
+RCA ticket opening.
+
+The *Built for healthcare* content and the engagement phases live on
+`healthcare.html` instead of being repeated here. §6 of the review treats
+these as alternatives ("the 'Built for healthcare' content, **or** a single
+page 'CMDR for hospitals'"), so this is faithful to it and removes a page of
+duplication.
+
+### Phases: corrected against the deck
+
+The review proposed a Year 1 / Year 2 / Year 3 framing. The deck's phases are
+**quarterly, Q4 FY'26 → Q4 FY'27** — five phases in about five quarters, with
+years 2 and 3 being licence renewals rather than delivery phases. The site now
+uses the deck's actual structure, objectives and per-phase values.
+
+One inconsistency to resolve in the deck itself: the phase table puts
+**Avoidance at Phase 5 (Q4 FY'27)**, but the CMDR slide says the ML layer
+"in phase 3 begins identifying precursor conditions", and the payment schedule
+labels the Phase 3 milestone "Major Incident Avoidance (ML)". The site takes
+the conservative reading — earlier phases build the pattern history, avoidance
+is the final phase — but the deck should be made consistent before a CIO reads
+both.
 
 ### Integrations (§4)
 
@@ -114,21 +158,30 @@ for hospitals"*, which answers the abbreviation question without a rename.
 
 ### Blocking
 
-1. **BCH name and logo permission.** The Founding Hospital Partner blocks on
-   `index.html` and `about.html`, the *"Built in Boston with Boston Children's
-   Hospital"* footer line, and the IDHA references are all commented out and
-   marked `PENDING CONFIRMATION`. The MSA covers publishing results, which may
-   not extend to name and logo use on a website. Get it in writing, add the
-   logo files listed in `assets/img/README.md`, then uncomment. The review
-   calls this the single most convincing thing on the page for a peer hospital
-   CIO, so it is worth chasing.
-2. **Team bios.** Luke's, Paul's and Teddy's bios render as visible dashed
-   placeholders in `about.html`. Paste the existing copy from the current About
-   Us page. Trishan's and Dayle's cards carry only the one added healthcare
-   clause each — their existing bios still need to go back in around it.
-3. **Legal pages.** `privacy.html` and `terms.html` contain placeholder text
+1. **Existing site content — logo, bios, exact copy.** The live site could not
+   be reached from the build environment, so nothing here is lifted from it.
+   Needed: the CMDR **logo files**, the **five team bios** as currently
+   written, and the existing Features / Integrations detail copy. Until these
+   land, the site is a faithful rendering of the two documents, not of the
+   live site.
+2. **BCH partner status.** The partner blocks on `index.html` and
+   `about.html`, and the footer line, are now **live** at the user's
+   instruction. Two things to confirm before this is public:
+   - The deck is a **pre-contract proposal** — its stated objective is to
+     "obtain verbal Go / No-Go for this initiative to proceed to contracting",
+     and the payment schedule is "Proposed". If contracting has not closed,
+     "Founding Hospital Partner" is premature as a public claim.
+   - The review flagged that the MSA covers publishing results, which may not
+     extend to name and logo use on a website.
+   The blocks render as styled text, so no logo file is required; drop one in
+   per `assets/img/README.md` when available.
+3. **Team bios.** Luke's, Paul's and Teddy's bios render as visible dashed
+   placeholders in `about.html`. Trishan's and Dayle's cards carry only the one
+   added healthcare clause each — existing bios still need to go back in
+   around them.
+4. **Legal pages.** `privacy.html` and `terms.html` contain placeholder text
    and are `noindex`. Paste the live text, or your counsel's version.
-4. **Form handler.** The demo form on `contact.html` posts to `#`. Point
+5. **Form handler.** The demo form on `contact.html` posts to `#`. Point
    `action` at whatever the live site uses (Webflow, HubSpot, or your own
    endpoint). Nothing is submitted anywhere until you do.
 

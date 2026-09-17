@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CMDR for Hospitals - Incident Response for Healthcare IT</title>
-  <meta name="description" content="Why hospital IT needs incident response built for healthcare: a HIPAA-compliant AI boundary, connectors to Jira, SolarWinds, TalkDesk, Teams and Outlook, and a service layer that defines what to measure with you.">
+  <meta name="description" content="How a CMDR engagement runs: data connections, KPIs, automation, training and major incident avoidance - in a fully HIPAA-compliant environment.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -24,14 +24,15 @@
         Menu
       </button>
 
-      <!-- Product (Features, Integrations) / Healthcare / About / Schedule a demo -->
+      <!-- §6: Product (Features, Integrations) / Healthcare / About / Schedule a demo -->
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul class="nav__list">
           <li><a class="nav__link" href="features.html">Features</a></li>
           <li><a class="nav__link" href="integrations.html">Integrations</a></li>
           <li><a class="nav__link" href="healthcare.html" aria-current="page">For hospitals</a></li>
           <li><a class="nav__link" href="about.html">About</a></li>
-            <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Schedule a demo</a></li>
+          <!-- §7: every demo call to action points at /contact, no on-page anchors. -->
+          <li class="nav__cta"><a class="btn btn--primary btn--sm" href="contact.html">Schedule a demo</a></li>
         </ul>
       </nav>
     </div>
@@ -39,14 +40,12 @@
 
   <main id="main">
 
-    <!-- The single Solutions page: CMDR for hospitals. -->
     <section class="hero">
       <div class="wrap">
         <h1>CMDR for hospitals</h1>
         <p class="hero__sub">
-          Hospitals run on systems that were never designed to fail together.
-          CMDR makes the response to that failure consistent, fast and recorded -
-          every time.
+          Hospitals run on systems that were never designed to fail together. CMDR
+          makes the response consistent, fast and recorded - every time.
         </p>
         <div class="btn-row">
           <a class="btn btn--on-dark" href="contact.html">Schedule a demo</a>
@@ -57,38 +56,8 @@
     <section class="section">
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">The problem</span>
-          <h2>No single source of truth, and no KPI for the response</h2>
-        </div>
-        <div class="band">
-          <div class="band__card">
-            <p class="band__label">Today</p>
-            <p>
-              In most hospitals, major incident data lives across Jira, SolarWinds,
-              TalkDesk and the security stack. There is no single source of truth,
-              no KPI for how long a response takes, and no measure of what an
-              outage costs. When the EHR degrades, the first ten minutes go on
-              working out who to call.
-            </p>
-          </div>
-          <div class="band__card band__card--fix">
-            <p class="band__label">With CMDR</p>
-            <p>
-              CMDR consolidates every source into one deterministic system,
-              standardises the response, and learns the precursors to the next
-              outage. Getting ahead of even one significant outage a year more than
-              pays for the platform.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="wrap">
-        <div class="section-head">
           <span class="eyebrow">Built for healthcare</span>
-          <h2>What "built for hospitals" actually means</h2>
+          <h2>What that actually means</h2>
         </div>
         <div class="grid grid--3">
           <div class="card">
@@ -102,8 +71,8 @@
           <div class="card">
             <h3>Your systems, not ours</h3>
             <p>
-              Connectors to Jira, SolarWinds, TalkDesk, Microsoft Teams, Outlook and
-              your security monitoring stack. Nothing is ripped out and replaced.
+              Connectors to Jira, SolarWinds, TalkDesk, Teams, Outlook and your
+              security monitoring stack. Nothing is ripped out and replaced.
             </p>
           </div>
           <div class="card">
@@ -117,59 +86,135 @@
       </div>
     </section>
 
-    <section class="section">
+    <!-- The five engagement phases, objectives and values exactly as the CMDR
+         vision deck sets them out. Quarterly, Q4 FY26 to Q4 FY27. -->
+    <section class="section section--alt">
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow">The engagement</span>
-          <h2>Visibility, then standardisation, then avoidance</h2>
+          <h2>Five phases, each one paying for the next</h2>
+          <p class="lede">
+            Quarterly milestones, with measurable goals for each phase. Low-risk,
+            high-reward objectives come first.
+          </p>
         </div>
-        <div>
+
+        <div class="phases">
           <div class="phase">
-            <span class="phase__year">Year 1</span>
-            <h3>Visibility</h3>
+            <span class="phase__year">Phase 1 &middot; Q4 FY&rsquo;26</span>
+            <h3>Data connections</h3>
             <p>
-              Every ticketing, call and monitoring source connected. KPIs for major
-              incident response where none existed. Leadership sees the state of the
-              environment and what each incident costs.
+              Identify and connect every ticketing, call and monitoring source to
+              CMDR.
+            </p>
+            <p class="phase__value">
+              Assess data in a deterministic system many times faster than people can.
             </p>
           </div>
           <div class="phase">
-            <span class="phase__year">Year 2</span>
-            <h3>Standardisation</h3>
+            <span class="phase__year">Phase 2 &middot; Q1 FY&rsquo;27</span>
+            <h3>Data analysis</h3>
             <p>
-              Incident bridges, recordings and tickets created automatically.
-              Training built from your own incidents, so new IT staff are productive
-              sooner and the response no longer depends on who is on shift.
+              Define the business questions and assess what CMDR should be telling
+              you.
+            </p>
+            <p class="phase__value">Establish KPIs where none exist today.</p>
+          </div>
+          <div class="phase">
+            <span class="phase__year">Phase 3 &middot; Q2 FY&rsquo;27</span>
+            <h3>Automation</h3>
+            <p>
+              Automate major incident bridges, call recording and ticket creation
+              with the CMDR bot.
+            </p>
+            <p class="phase__value">
+              Reduce process overhead and dependency on individual IT staff.
             </p>
           </div>
           <div class="phase">
-            <span class="phase__year">Year 3</span>
-            <h3>Avoidance <span class="tag">Phase 5 &middot; on the roadmap</span></h3>
+            <span class="phase__year">Phase 4 &middot; Q3 FY&rsquo;27</span>
+            <h3>Learning</h3>
             <p>
-              With enough incident history, CMDR identifies the precursor conditions
-              to a major incident and flags them before the outage. Avoiding one
-              significant outage a year more than justifies the investment; every
-              year after that, the saving repeats. Scheduled for Q4 FY27.
+              Turn what CMDR has learned from your own incidents into training for IT
+              staff.
             </p>
+            <p class="phase__value">
+              Standardise processes and learning, and reduce onboarding times.
+            </p>
+          </div>
+          <div class="phase">
+            <span class="phase__year">Phase 5 &middot; Q4 FY&rsquo;27</span>
+            <h3>Avoidance</h3>
+            <p>
+              With patterns established across the earlier phases, the precursors to
+              a major incident become evident before the outage.
+            </p>
+            <p class="phase__value">Avoid major incidents.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why the incumbents have not built this, and why it scales. -->
+    <!-- The saving is the deck's own value language. The deck contains no
+         outcome figures, so none are stated here - see NOTES.md. -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">The return</span>
+          <h2>Where the saving comes from</h2>
+          <p class="lede">
+            Each phase returns something on its own, and produces the data that makes
+            the next one possible.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>Immediately</h3>
+            <p>
+              Automated initiation, bridge management and RCA remove the human error
+              and inconsistency that affect response times today - and the hours
+              spent assembling a timeline after the fact.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Within a year</h3>
+            <p>
+              Standardised, recorded processes cut process overhead and shorten
+              onboarding, so a response stops depending on who is on shift or who
+              remembers last time.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Long term, and compounding</h3>
+            <p>
+              Every incident CMDR records adds to the pattern history. With enough of
+              it, the machine learning layer flags the precursors to a major incident
+              while there is still time to act - and an outage that is avoided costs
+              nothing. The history only gets richer, so each year of data makes the
+              next year's avoidance better than the last.
+            </p>
+          </div>
+        </div>
+
+        <p class="pullquote">
+          Getting ahead of even one significant outage a year more than justifies the
+          investment.
+        </p>
+      </div>
+    </section>
+
     <section class="section section--alt">
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow">Why this is not already solved</span>
           <h2>The incumbents sell a platform, not a process</h2>
           <p class="lede">
-            ServiceNow and Jira Service Management are horizontal: they are sold to
-            every industry, so the incident process, the classification scheme and
-            the compliance boundary are left to the customer to define - which is
-            exactly the work a hospital IT department does not have the capacity to
-            do. Because hospitals run substantially the same stack as one another,
-            the process CMDR standardises at one hospital transfers to the next
-            without being rebuilt.
+            ServiceNow and Jira Service Management are horizontal: they leave the
+            incident process, the classification scheme and the compliance boundary
+            to the customer - which is exactly the work a hospital IT department has
+            no capacity for. And because hospitals run substantially the same stack,
+            what CMDR standardises at one transfers to the next.
           </p>
         </div>
         <div class="btn-row">
@@ -187,10 +232,7 @@
         <div class="footer-brand">
           <span class="footer-brand__name">CMDR</span>
           <p>Incident response built for hospital IT. Streamline your incident response today.</p>
-          <!-- PENDING CONFIRMATION: enable once Boston Children's Hospital has
-               approved use of its name on the website.
           <p style="margin-top:.6rem">Built in Boston with Boston Children's Hospital.</p>
-          -->
         </div>
 
         <div class="footer-col">
