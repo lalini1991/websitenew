@@ -1,0 +1,44 @@
+name: Deploy site to GitHub Pages
+
+# Works with Settings -> Pages -> Source -> "GitHub Actions".
+# The "Deploy from a branch" option also works and needs no workflow.
+on:
+  push:
+    branches: [claude/website-updates-suggestions-3b8nzr]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Stage only what the site serves, so the working notes in NOTES.md and
+      # README.md are not fetchable from the published URL.
+      - name: Stage site files
+        run: |
+          mkdir -p _site
+          cp *.html _site/
+          cp robots.txt .nojekyll _site/
+          cp -r assets _site/
+          rm -f _site/assets/img/README.md
+          echo "Staged:" && find _site -type f | sort
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
