@@ -24,6 +24,23 @@ the site buildless. Edit one, edit all — there are eight pages.
 `assets/js/main.js` only enhances. With JavaScript off, every accordion panel
 is open, the nav is visible at desktop widths, and every link works.
 
+## Sharing a preview
+
+The repo is public and this branch is the default branch, so GitHub Pages can
+serve it directly with no build step:
+
+1. **Settings → Pages**
+2. Source: **Deploy from a branch**
+3. Branch: `claude/website-updates-suggestions-3b8nzr`, folder: **/ (root)**
+4. Save. The site appears at **https://lalini1991.github.io/websitenew/**
+   within a minute or two.
+
+Anyone with that link can open it — no account needed. `.nojekyll` is present
+so Pages serves the files as-is rather than running Jekyll over them.
+
+`robots.txt` currently blocks all indexing, because the bios are placeholders
+and the partner claim is pending. **Delete `robots.txt` at launch.**
+
 ## Before publishing
 
 **Read [NOTES.md](NOTES.md) first.** It records what changed and why, and lists

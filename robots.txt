@@ -1,0 +1,10 @@
+# PREVIEW ONLY - DELETE THIS FILE BEFORE THE REAL SITE GOES LIVE.
+#
+# While this repo is served as a shareable preview (GitHub Pages), it should
+# not be indexed: the team bios are placeholders and the Boston Children's
+# Hospital partner claim is pending confirmation of contract status. Being
+# indexed now would put both into search results.
+#
+# At launch, delete this file so the site can be indexed normally.
+User-agent: *
+Disallow: /

@@ -179,9 +179,12 @@ for hospitals"*, which answers the abbreviation question without a rename.
    placeholders in `about.html`. Trishan's and Dayle's cards carry only the one
    added healthcare clause each — existing bios still need to go back in
    around them.
-4. **Legal pages.** `privacy.html` and `terms.html` contain placeholder text
+4. **Delete `robots.txt`.** It blocks all search indexing, which is right for
+   a preview but wrong for the live site. Remove it when the placeholders and
+   the partner claim are resolved.
+5. **Legal pages.** `privacy.html` and `terms.html` contain placeholder text
    and are `noindex`. Paste the live text, or your counsel's version.
-5. **Form handler.** The demo form on `contact.html` posts to `#`. Point
+6. **Form handler.** The demo form on `contact.html` posts to `#`. Point
    `action` at whatever the live site uses (Webflow, HubSpot, or your own
    endpoint). Nothing is submitted anywhere until you do.
 
